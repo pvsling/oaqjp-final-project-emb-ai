@@ -1,4 +1,4 @@
-from emotion_detection import emotion_detector
+from EmotionDetection.emotion_detection import emotion_detector
 
 
 def main2b(): 
@@ -12,5 +12,10 @@ def main3():
     with open("3b_formatted_output_test.txt", "w") as file:
         file.write(str(result))
 
+def main4(): 
+    result = emotion_detector("I hate working long hours.")
+    with open("4b_packaging_test.txt", "w") as file:
+        file.write(str(result))
+
 if __name__ == '__main__':
-    main3()
+    main4()
